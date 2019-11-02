@@ -1,0 +1,47 @@
+{
+  "logs": [
+    {
+      "id": 1,
+      "message": "Bug on timesheet, hours did not register when saved",
+      "attention": false,
+      "date": "03-03-2019",
+      "tech": "Kurtis Sawvey"
+    },
+    {
+      "id": 2,
+      "message": "Defect: all employees awarded duplicated balance",
+      "attention": true,
+      "date": "03-06-2019",
+      "tech": "Matthew Shepelsky"
+    },
+    {
+      "id": 3,
+      "message": "Payroll filefeed is down",
+      "attention": true,
+      "date": "03-06-2019",
+      "tech": "Gary Wang"
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "Gary",
+      "lastName": "Wang"
+    },
+    {
+      "id": 2,
+      "firstName": "Matthew",
+      "lastName": "Shepelsky"
+    },
+    {
+      "id": 3,
+      "firstName": "Kurtis",
+      "lastName": "Sawvey"
+    },
+    {
+      "firstName": "Minh",
+      "lastName": "Tran",
+      "id": 4
+    }
+  ]
+}
