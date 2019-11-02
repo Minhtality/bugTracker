@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import LogItem from './LogItem'
+import Preloader from '../layout/Preloader';
 
 const Logs = () => {
     const [logs, setLogs] = useState([]);
@@ -21,18 +23,18 @@ const Logs = () => {
 
     // conditional for when we are in loading stage
     if (loading) {
-        return <h3>Loading...please wait</h3>
+        return <Preloader />
     }
 
     return (
-        <ul className="collection-with-header">
-            <li className="conllection-header">
+        <ul className="collection with-header">
+            <li className="collection header">
                 <h4 className="center">
-                    System Logs
+                    Defect Logs
                 </h4>
             </li>
             {!loading && logs.length === 0 ? (<p className="center">No Logs to Show...</p>) : (
-                logs.map(log => <li>{log.message}</li>)
+                logs.map(log => <LogItem log={log} key={log.id} />)
             )}
         </ul>
     )
