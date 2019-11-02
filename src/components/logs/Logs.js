@@ -28,7 +28,7 @@ const Logs = () => {
 
     return (
         <ul className="collection with-header">
-            <li className="collection header">
+            <li className="collection-header">
                 <h4 className="center">
                     Defect Logs
                 </h4>
