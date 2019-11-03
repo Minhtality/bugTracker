@@ -6,6 +6,8 @@ import Logs from './components/logs/Logs'
 import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css/dist/js/materialize.min.js'
 import './App.css';
+import AddTechModal from './components/techs/AddTechModal';
+import EditLogModal from './components/logs/EditLogModal';
 
 const App = () => {
 
@@ -20,6 +22,8 @@ const App = () => {
       <div className="container">
         <AddBtn />
         <AddLogModal />
+        <EditLogModal />
+        <AddTechModal />
         <Logs />
       </div>
     </Fragment>
